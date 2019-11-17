@@ -1,6 +1,25 @@
 # Electron starter with create-react-app and reach-router
 Electron, create-react-app, and reach-router coexisting in harmony.
 
+## Usage
+For development, start the following in separate terminals:
+```bash
+# start React dev server (open in terminal 1)
+yarn dev:react
+
+# start Electron app (open in terminal 2)
+yarn dev:main
+```
+
+For prod, run:
+```bash
+# build react app
+yarn build
+
+# start Electron and load prod react app
+yarn start
+```
+
 ## Notable
 ### Main
 Main process is launched via `main.js`.  This accepts a command-line argument to override start url for the main window.  See `dev:main` npm script which loads the local webpack dev server (http://localhost:3000).
