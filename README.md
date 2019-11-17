@@ -28,4 +28,4 @@ export default () => {
   return <pre>{JSON.stringify(data, null, 2)}</pre>;
 };
 ```
-Also see [src/components/Page2.jsx]()
+Also see [src/components/Page2.jsx](/src/components/Page2.jsx)
