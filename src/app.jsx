@@ -4,7 +4,7 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// use memory-based history for Electron
+// use memory-based history for routing in Electron
 const history = createHistory(createMemorySource());
 
 // dummy pages
@@ -15,7 +15,7 @@ const NotFound = ({location}) => (
   </div>
 );
 
-// common markup for Bootstrap nav links
+// Bootstrap nav link with active class
 const NavLink = ({label, path}) => (
   <li className="nav-item">
     <Link
@@ -34,14 +34,14 @@ const NavLink = ({label, path}) => (
 // main
 export default () => (
   <>
-    {/* wrap all routes and Links in LocationProvider to use memory-based history */}
+    {/* wrap all Routes and Links in LocationProvider to use memory-based history */}
     <LocationProvider history={history}>
       {/* Bootstrap navbar */}
       <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <Link className="navbar-brand" to="/">
           Electron Starter
         </Link>
-        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div className="collapse navbar-collapse">
           <ul className="navbar-nav mr-auto">
             <NavLink path="page1" label="Page 1" />
             <NavLink path="page2" label="Page 2" />
