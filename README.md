@@ -1,5 +1,6 @@
-# Electron starter with create-react-app and reach-router
-Electron, create-react-app, and reach-router coexisting in harmony.
+# Electron starter with create-react-app and Reach Router
+[Electron](https://electronjs.org/), [create-react-app](https://create-react-app.dev/), and [Reach Router](https://reach.tech/router) in harmony.
+Starter project is intended to be minimal yet cover key integration scenarios.  [Bootstrap](https://getbootstrap.com/) is used as the UI framework.
 
 ## Usage
 For development, start the following in separate terminals:
@@ -25,10 +26,10 @@ yarn start
 Main process is launched via `main.js`.  This accepts a command-line argument to override start url for the main window.  See `dev:main` npm script which loads the local webpack dev server (http://localhost:3000).
 
 ### React
-Render process loads a web page created by [create-react-app](https://create-react-app.dev/) for config-less and familiar React environment.  At dev-time, the Webpack dev server is used, at run-time, the built site is used.
+Render process loads a web page created by create-react-app for config-less and familiar React environment.  At dev-time, the Webpack dev server is used, at run-time, the built site is used.
 
 ### Reach Router
-Routing within the app is done using [Reach Router](https://reach.tech/router).  The main tweak was to use a memory-based LocationProvider to enable routing when loading `index.html` from the file system.
+Routing within the app is done using Reach Router.  The main tweak was to use a memory-based LocationProvider to enable routing when loading `index.html` from the file system.
 
 ### Node access
 [BrowserWindow](https://electronjs.org/docs/api/browser-window) is loaded with `nodeIntegration` enabled which enables loading Node modules from within the frontend code.
