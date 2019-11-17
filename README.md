@@ -23,7 +23,7 @@ yarn start
 
 ## About
 ### Main
-Main process is launched via `main.js`.  This accepts a command-line argument to override start url for the main window.  See `dev:main` npm script which loads the local webpack dev server (http://localhost:3000).
+Main process is launched via `main.js` and accepts a command-line argument to override start url for the main window.  See `dev:main` npm script which loads the local webpack dev server at http://localhost:3000.
 
 ### React
 Render process loads a web page created by create-react-app for config-less and familiar React environment.  At dev-time, the Webpack dev server is used, at run-time, the built site is used.
