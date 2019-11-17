@@ -21,7 +21,7 @@ yarn build
 yarn start
 ```
 
-## Notable
+## About
 ### Main
 Main process is launched via `main.js`.  This accepts a command-line argument to override start url for the main window.  See `dev:main` npm script which loads the local webpack dev server (http://localhost:3000).
 
