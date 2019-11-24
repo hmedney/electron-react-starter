@@ -29,10 +29,10 @@ Main process is launched via `main.js` and accepts a command-line argument to ov
 Render process loads a web page created by create-react-app for config-less and familiar React environment.  At dev-time, the Webpack dev server is used, at run-time, the built site is used.
 
 ### Reach Router
-Routing within the app is done using Reach Router.  The main tweak was to use a memory-based LocationProvider to enable routing when loading `index.html` from the file system.
+Routing within the app is done using Reach Router.  The main tweak was to use url [hash history](https://www.npmjs.com/package/hash-source) and LocationProvider to enable routing when loading `index.html` from the file system.
 
 ### Node access
-[BrowserWindow](https://electronjs.org/docs/api/browser-window) is loaded with `nodeIntegration` enabled which enables loading Node modules from within the frontend code.
+[BrowserWindow](https://electronjs.org/docs/api/browser-window) is created with `nodeIntegration` enabled which enables loading Node modules from within the frontend code.
 
 Example:
 ```javascript

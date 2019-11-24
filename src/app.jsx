@@ -1,11 +1,12 @@
 import React from 'react';
-import {Router, Link, createMemorySource, createHistory, LocationProvider} from '@reach/router';
+import {Router, Link, createHistory, LocationProvider} from '@reach/router';
+import createHashSource from 'hash-source';
 import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // use memory-based history for routing in Electron
-const history = createHistory(createMemorySource());
+const history = createHistory(createHashSource());
 
 // dummy pages
 const Home = () => <div>Home</div>;
