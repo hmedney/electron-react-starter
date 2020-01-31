@@ -16,7 +16,7 @@
     "@reach/router": "^1.2.1",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
-    "electron": "^7.1.9",
+    "electron": "^7.1.11",
     "fs-extra": "^8.1.0",
     "hash-source": "^1.0.4",
     "react": "^16.9.0",
