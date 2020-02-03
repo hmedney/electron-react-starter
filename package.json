@@ -13,7 +13,7 @@
     "start": "electron ."
   },
   "dependencies": {
-    "@reach/router": "^1.2.1",
+    "@reach/router": "^1.3.0",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "electron": "^7.1.9",
