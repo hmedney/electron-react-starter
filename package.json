@@ -20,7 +20,7 @@
     "fs-extra": "^8.1.0",
     "hash-source": "^1.0.5",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.13.0"
   },
   "devDependencies": {
     "electron-packager": "^14.2.1",
