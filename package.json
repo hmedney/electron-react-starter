@@ -33,7 +33,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.2",
     "prettier": "^2.0.1",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^3.4.3"
   },
   "browserslist": {
     "production": [
