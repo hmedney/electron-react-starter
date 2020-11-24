@@ -3,7 +3,6 @@ const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
 const url = require('url');
 
-const {app, BrowserWindow} = electron;
 let win;
 
 function createWindow() {
@@ -47,4 +46,8 @@ app.on('activate', () => {
   if (win === null) {
     createWindow();
   }
+});
+
+ipcMain.handle('get-app-path', () => {
+  return app.getAppPath();
 });
