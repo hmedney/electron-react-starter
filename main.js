@@ -1,7 +1,10 @@
 require('dotenv').config();
-const {app, BrowserWindow, ipcMain} = require('electron');
+const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
+
+// expose remote to render process
+require('@electron/remote/main').initialize();
 
 let win;
 
@@ -13,7 +16,8 @@ function createWindow() {
     height: 768,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
+      enableRemoteModule: true
     }
   });
 
@@ -46,8 +50,4 @@ app.on('activate', () => {
   if (win === null) {
     createWindow();
   }
-});
-
-ipcMain.handle('get-app-path', () => {
-  return app.getAppPath();
 });
