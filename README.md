@@ -38,12 +38,12 @@ Example:
 ```javascript
 import React from 'react';
 
-const {remote} = window.require('electron');
+const {app} = window.require('@electron/remote');
 const path = window.require('path');
 const fsx = window.require('fs-extra');
 
 export default () => {
-  const dataFile = path.resolve(remote.app.getAppPath(), 'src/data/hello-world.json');
+  const dataFile = path.resolve(app.getAppPath(), 'src/data/hello-world.json');
   const data = fsx.readJSONSync(dataFile);
   return <pre>{JSON.stringify(data, null, 2)}</pre>;
 };
