@@ -21,11 +21,9 @@ const NavLink = ({label, path}) => (
   <li className="nav-item">
     <Link
       to={path}
-      getProps={({isCurrent}) => {
-        return {
-          className: `nav-link${isCurrent ? ' active' : ''}`
-        };
-      }}
+      getProps={({isCurrent}) => ({
+        className: `nav-link${isCurrent ? ' active' : ''}`
+      })}
     >
       {label}
     </Link>
