@@ -44,14 +44,16 @@ export default function App() {
       <LocationProvider history={history}>
         {/* Bootstrap navbar */}
         <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <Link className="navbar-brand" to="/">
-            Electron Starter
-          </Link>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav mr-auto">
-              <NavLink path="page1" label="Page 1" />
-              <NavLink path="page2" label="Page 2" />
-            </ul>
+          <div class="container-fluid">
+            <Link className="navbar-brand" to="/">
+              Electron Starter
+            </Link>
+            <div className="collapse navbar-collapse">
+              <ul className="navbar-nav mr-auto">
+                <NavLink path="page1" label="Page 1" />
+                <NavLink path="page2" label="Page 2" />
+              </ul>
+            </div>
           </div>
         </nav>
 
