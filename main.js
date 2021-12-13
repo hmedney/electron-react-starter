@@ -1,10 +1,8 @@
 require('dotenv').config();
-const {app, BrowserWindow} = require('electron');
+const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
+const fsx = require('fs-extra');
 const url = require('url');
-
-// expose remote to render process
-require('@electron/remote/main').initialize();
 
 let win;
 
@@ -15,9 +13,10 @@ function createWindow() {
     width: 1024,
     height: 768,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
-      enableRemoteModule: true
+      nodeIntegration: false,
+      contextIsolation: true,
+      enableRemoteModule: true,
+      preload: path.join(__dirname, 'preload.js')
     }
   });
 
@@ -37,6 +36,13 @@ function createWindow() {
     win = null;
   });
 }
+
+// provide base path to renderer
+ipcMain.on('getLocalFileContents', (event) => {
+  const dataFile = path.resolve(__dirname, 'src/data/hello-world.json');
+  const data = fsx.readJSONSync(dataFile);
+  event.returnValue = data;
+});
 
 app.on('ready', createWindow);
 
