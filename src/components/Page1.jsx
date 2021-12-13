@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <div>Page 1</div>;
+export default function Page1() {
+  return <div>Page 1</div>;
+}

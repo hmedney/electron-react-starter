@@ -4,7 +4,7 @@ const {app} = window.require('@electron/remote');
 const path = window.require('path');
 const fsx = window.require('fs-extra');
 
-export default () => {
+export default function Page2() {
   const dataFile = path.resolve(app.getAppPath(), 'src/data/hello-world.json');
   const data = fsx.readJSONSync(dataFile);
   return (
@@ -17,4 +17,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}
