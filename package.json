@@ -1,6 +1,7 @@
 {
   "name": "electron-react-starter",
   "version": "2.0.0",
+  "license": "MIT",
   "description": "Starter app for Electron using React with Reach Router",
   "author": "Hunter Medney",
   "main": "main.js",
