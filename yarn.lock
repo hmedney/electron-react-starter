@@ -4376,16 +4376,6 @@ ejs@^2.6.1:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"
   integrity sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
 
-election@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/election/-/election-0.0.0.tgz#0ce5919b989160cd4cdddaf8fcf2b900976ff0ce"
-  integrity sha1-DOWRm5iRYM1M3dr4/PK5AJdv8M4=
-
-electon@^0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.yarnpkg.com/electon/-/electon-0.0.1-security.tgz#cfcf44fb115b1a500b1cc75993daf475e99dd0de"
-  integrity sha512-vSE9AP5q6RhkWRcvEFgUBGo6AYjV6qF65FzyKQ3JqRBwTcJmcXiXaiBrsFUlTPpLem2rLQf1p+R7SMgGZwwAxA==
-
 electron-notarize@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/electron-notarize/-/electron-notarize-1.1.1.tgz#3ed274b36158c1beb1dbef14e7faf5927e028629"
@@ -4648,25 +4638,6 @@ escodegen@^2.0.0:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
-
-eslint-config-airbnb-base@^15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz#6b09add90ac79c2f8d723a2580e07f3925afd236"
-  integrity sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==
-  dependencies:
-    confusing-browser-globals "^1.0.10"
-    object.assign "^4.1.2"
-    object.entries "^1.1.5"
-    semver "^6.3.0"
-
-eslint-config-airbnb@^19.0.2:
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-19.0.2.tgz#3a1681e39b68cc6abeae58300014ed5d5706b625"
-  integrity sha512-4v5DEMVSl043LaCT+gsxPcoiIk0iYG5zxJKKjIy80H/D//2E0vtuOBWkb0CBDxjF+y26yQzspIXYuY6wMmt9Cw==
-  dependencies:
-    eslint-config-airbnb-base "^15.0.0"
-    object.assign "^4.1.2"
-    object.entries "^1.1.5"
 
 eslint-config-prettier@^8.3.0:
   version "8.3.0"
